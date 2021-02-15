@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title','Laravels')
+@section('title','Budhi')
 @section('content')
 <div class="section-body">
     ini isi content

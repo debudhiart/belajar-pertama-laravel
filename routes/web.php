@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('crud', 'CrudController@index');
-Route::get('crud/tambah', 'CrudController@tambah');
+Route::get('crud', 'CrudController@index')->name('crud');
+Route::get('crud/tambah', 'CrudController@tambah')->name('crud.tambah');
+Route::post('curd/simpan','CrudController@simpan')->name('crud.simpan');
