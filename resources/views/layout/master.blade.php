@@ -70,13 +70,17 @@
   <script src="{{asset('assets/js/stisla.js')}}"></script>
   
   <!-- JS Libraies -->
+  @stack('page-scripts')
+
 
   <!-- Page Specific JS File -->
   
   <!-- Template JS File -->
   <script src="{{asset('assets/js/scripts.js')}}"></script>
   <script src="{{asset('assets/js/custom.js')}}"></script>
+  
+  @stack('after-script')
+  
 
-  @stack('page-scripts')
 </body>
 </html>

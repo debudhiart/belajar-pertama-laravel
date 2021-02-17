@@ -19,4 +19,5 @@ Route::get('/', function () {
 
 Route::get('crud', 'CrudController@index')->name('crud');
 Route::get('crud/tambah', 'CrudController@tambah')->name('crud.tambah');
-Route::post('curd/simpan','CrudController@simpan')->name('crud.simpan');
+Route::post('crud/simpan','CrudController@simpan')->name('crud.simpan');
+Route::delete('crud/delete/{id}','CrudController@delete')->name('crud.delete');
